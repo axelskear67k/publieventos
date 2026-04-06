@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+if ($_SESSION['rol'] != 'admin') {
+    header("Location: /publieventos/index.php");
+exit();
+
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>

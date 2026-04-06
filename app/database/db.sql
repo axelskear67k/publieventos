@@ -1,4 +1,4 @@
--- Active: 1771597135788@@127.0.0.1@3306
+-- Active: 1771597135788@@127.0.0.1@3306@inventario
 -- Active: 1771597135788@@127.0.0.1@3306
 CREATE DATABASE inventario;
 
@@ -21,6 +21,16 @@ CREATE TABLE productos (
     estado ENUM('Disponible','Alquilado','No Disponible') NOT NULL
 ) ENGINE=INNODB;
 
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario VARCHAR(50),
+    password VARCHAR(50),
+    rol VARCHAR(20)
+);
+
+INSERT INTO usuarios (usuario, password, rol) VALUES
+('admin', '1234', 'admin'),
+('edson', '1234', 'usuario');
 
 
 ALTER TABLE productos 
@@ -47,3 +57,4 @@ VALUES
 
 
 SELECT * FROM productos;
+select * from usuarios
