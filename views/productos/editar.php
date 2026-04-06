@@ -16,7 +16,7 @@ $id = isset($_GET['id']) ? $_GET['id'] : 0;
 
   <!--  BOTONES -->
   <div class="mb-3 d-flex gap-2">
-    <a href="../../index.html" class="btn btn-secondary btn-sm">
+    <a href="../../index.php" class="btn btn-secondary btn-sm">
       ← Volver al Inicio
     </a>
 

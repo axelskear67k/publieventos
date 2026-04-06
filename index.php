@@ -1,3 +1,8 @@
+<?php
+// PRUEBA DE PHP (puedes borrar luego)
+ // echo "FUNCIONA PHP";
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -21,29 +26,40 @@
     </div>
 </nav>
 
-<!-- HERO con imagen al lado derecho -->
+<!-- HERO -->
 <header class="py-5 bg-light">
     <div class="container">
         <div class="row align-items-center">
-            <!-- Texto y botones a la izquierda -->
+
+            <!-- TEXTO -->
             <div class="col-md-6 text-center text-md-start mb-4 mb-md-0">
                 <h1 class="display-5 fw-bold">Sistema de Inventario</h1>
+
+                <!-- BOTONES -->
                 <div class="d-grid gap-2 d-md-flex">
                     <a href="views/productos/crear.php" class="btn btn-success btn-lg me-md-2 mb-2 mb-md-0">
                         <i class="bi bi-plus-circle-fill"></i> Registrar Producto
                     </a>
+
                     <a href="views/productos/buscar.php" class="btn btn-secondary btn-lg me-md-2 mb-2 mb-md-0">
                         <i class="bi bi-search"></i> Buscar Producto
                     </a>
+
                     <a href="views/productos/listar.php" class="btn btn-primary btn-lg mb-2 mb-md-0">
                         <i class="bi bi-card-list"></i> Ver Inventario
                     </a>
                 </div>
+
+                <div>
+                </div>
+
             </div>
-            <!-- Imagen del roll screen a la derecha -->
+
+            <!-- IMAGEN -->
             <div class="col-md-6 text-center">
                 <img src="./public/images/WhatsApp Image 2026-03-05 at 11.33.50.jpeg" class="img-fluid rounded shadow" alt="Roll Screen">
             </div>
+
         </div>
     </div>
 </header>

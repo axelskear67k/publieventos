@@ -10,7 +10,7 @@
   <div class="container">
     <h1>Registro de Productos</h1>
     <div class="mb-3 d-flex gap-2">
-  <a href="../../index.html" class="btn btn-secondary">
+  <a href="../../index.php" class="btn btn-secondary">
     ← Volver al Inicio
   </a>
 
