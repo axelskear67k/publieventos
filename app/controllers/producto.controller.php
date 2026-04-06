@@ -66,5 +66,17 @@ if (isset($_POST['operacion'])) {
     case 'obtener':
       echo json_encode($producto->obtener($_POST['IT']));
     break;
+
+    case 'estadisticas':
+
+      $data = [
+        "general" => $producto->estadisticas(),
+        "categorias" => $producto->categorias()->fetchAll(PDO::FETCH_ASSOC),
+        "estados" => $producto->estados()->fetchAll(PDO::FETCH_ASSOC)
+      ];
+
+      echo json_encode($data);
+
+    break;
   }
 }

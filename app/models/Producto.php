@@ -173,4 +173,37 @@ class Producto extends Conexion
       return [];
     }
   }
+
+  // 📊 ESTADÍSTICAS GENERALES
+public function estadisticas() {
+  try {
+    $sql = "
+      SELECT 
+        COUNT(*) as total_productos,
+        SUM(cantidad) as total_stock,
+        AVG(DATEDIFF(fecha_termino, fecha_inicio)) as promedio_dias
+      FROM productos
+    ";
+
+    $consulta = $this->pdo->prepare($sql);
+    $consulta->execute();
+
+    return $consulta->fetch(PDO::FETCH_ASSOC);
+
+  } catch (Exception $e) {
+    return [];
+  }
+}
+// 📦 POR CATEGORÍA
+public function categorias() {
+  $sql = "SELECT categoria, COUNT(*) as total FROM productos GROUP BY categoria";
+  return $this->pdo->query($sql);
+}
+
+// 📊 POR ESTADO
+public function estados() {
+  $sql = "SELECT estado, COUNT(*) as total FROM productos GROUP BY estado";
+  return $this->pdo->query($sql);
+}
+
 }

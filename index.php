@@ -71,13 +71,18 @@ if (!isset($_SESSION['usuario'])) {
                         <a href="views/productos/listar.php" class="btn btn-primary btn-lg">
                             <i class="bi bi-card-list"></i> Ver Inventario
                         </a>
+
+                        <!-- 🔥 NUEVO BOTÓN -->
+                        <a href="views/productos/estadistica.php" class="btn btn-warning btn-lg">
+                            <i class="bi bi-bar-chart"></i> Ver Estadísticas
+                        </a>
                     <?php endif; ?>
 
                 </div>
 
             </div>
 
-            <!-- IMAGEN (TUYA, NO SE TOCA) -->
+            <!-- IMAGEN -->
             <div class="col-md-6 text-center">
                 <img src="./public/images/WhatsApp Image 2026-03-05 at 11.33.50.jpeg" 
                      class="img-fluid rounded shadow" 
