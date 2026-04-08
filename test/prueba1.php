@@ -1,6 +1,11 @@
 <?php
+require("Conexion.php");
 
-require_once '../app/models/Producto.php';
-$producto = new Producto();
+$conexion = new Conexion();
+$pdo = $conexion->getConexion();
 
-print_r($producto->listar());
+if($pdo){
+    echo "🔥 CONEXIÓN EXITOSA";
+}
+?>
+
