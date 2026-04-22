@@ -1,4 +1,4 @@
--- Active: 1771597135788@@127.0.0.1@3306@inventario
+-- Active: 1776866079393@@127.0.0.1@3306@inventario
 -- Active: 1771597135788@@127.0.0.1@3306
 CREATE DATABASE inventario;
 
